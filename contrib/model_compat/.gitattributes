@@ -1,0 +1,2 @@
+# A leading space is required for blank context lines in unified diffs.
+r2ai_magic/rl/patches/*.patch -whitespace

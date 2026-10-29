@@ -1,0 +1,301 @@
+{
+  "scope": "Original model compatibility contribution; source paths are logical labels, not deployment paths.",
+  "files": [
+    {
+      "file": "r2ai_magic/__init__.py",
+      "source": "MAGIC-official-main/r2ai_magic/__init__.py",
+      "original_sha256": "db6fd1ebde21c00073f85f7212974218df19f58f06d3b7ae2faede69c7edd346",
+      "contribution_sha256": "949228fc5e8a316a7d9ff966f8cd4eedf58d18e22bb05c8d636e56f0720c61b8",
+      "unchanged": false
+    },
+    {
+      "file": "r2ai_magic/fsdp_sft.py",
+      "source": "MAGIC-official-main/r2ai_magic/fsdp_sft.py",
+      "original_sha256": "ec7aa32a967c481d56dd42bc95b2863bc21458754edb6ff95be47f8532285421",
+      "contribution_sha256": "ec7aa32a967c481d56dd42bc95b2863bc21458754edb6ff95be47f8532285421",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/__init__.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/__init__.py",
+      "original_sha256": "04a41f21ac180eedad197ae41c8686358af4057468d006ca605ff1e2431bab9e",
+      "contribution_sha256": "04a41f21ac180eedad197ae41c8686358af4057468d006ca605ff1e2431bab9e",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/__init__.py",
+      "source": "MAGIC-official-main/r2ai_magic/rl/__init__.py",
+      "original_sha256": "c7fd6187eba102468c095bcaf584e2cbcd0b5e3b8c83e3697fa67b284ecfff56",
+      "contribution_sha256": "2cd4e3030aca8799c48524c1bf77b9200e7e58940bb005d485cc4c8648c58cac",
+      "unchanged": false
+    },
+    {
+      "file": "r2ai_magic/rl/agent_loop.py",
+      "source": "MAGIC-official-main/r2ai_magic/rl/agent_loop.py",
+      "original_sha256": "7d5c9ac09bd7eb52174ba13e6cd5541a34e874fbbb73f0afc096be35e131fb41",
+      "contribution_sha256": "7d5c9ac09bd7eb52174ba13e6cd5541a34e874fbbb73f0afc096be35e131fb41",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/agent_loops.yaml",
+      "source": "MAGIC-official-main/r2ai_magic/rl/agent_loops.yaml",
+      "original_sha256": "38659afb034226093549bd5d88ccd32def20640303550b07b673a511066f7f8d",
+      "contribution_sha256": "e86a8e6898e7204bdef72c678b9490bb41e36d66523bdb8ffb6b7c94be8753c4",
+      "unchanged": false
+    },
+    {
+      "file": "r2ai_magic/rl/contracts.py",
+      "source": "MAGIC-official-main/r2ai_magic/rl/contracts.py",
+      "original_sha256": "6556a7bcffd384b58bfb6e6910337444c20dc2d2340d15c7937e8881d6b624ff",
+      "contribution_sha256": "6556a7bcffd384b58bfb6e6910337444c20dc2d2340d15c7937e8881d6b624ff",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/vllm_weight_patch.py",
+      "source": "MAGIC-official-main/r2ai_magic/rl/vllm_weight_patch.py",
+      "original_sha256": "c60cfbe7828af538ef9bb136917d6c3d79f48d233b0aa51774ddf1b91cb4079b",
+      "contribution_sha256": "c60cfbe7828af538ef9bb136917d6c3d79f48d233b0aa51774ddf1b91cb4079b",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/normalize_ministral3_merged.py",
+      "source": "MAGIC-official-main/r2ai_magic/rl/normalize_ministral3_merged.py",
+      "original_sha256": "99f91ecc877580b9ddb5f906d37c5b2461459af9c0a2f2d6790a03a7424969fa",
+      "contribution_sha256": "99f91ecc877580b9ddb5f906d37c5b2461459af9c0a2f2d6790a03a7424969fa",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/prepare_ministral3_text_model.py",
+      "source": "MAGIC-official-main/r2ai_magic/rl/prepare_ministral3_text_model.py",
+      "original_sha256": "f5939a218f86a9b16f2ab6ea904b6809a3abc43ecad42b2f765933ff30f42095",
+      "contribution_sha256": "f5939a218f86a9b16f2ab6ea904b6809a3abc43ecad42b2f765933ff30f42095",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patch_vllm018_yarn_mscale.py",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patch_vllm018_yarn_mscale.py",
+      "original_sha256": "4469d3a6c8ddb68262bf676d6f19b80350f83db5765ca672cd751fbc341a1174",
+      "contribution_sha256": "4469d3a6c8ddb68262bf676d6f19b80350f83db5765ca672cd751fbc341a1174",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/runtime/vllm-qwen35-sft-adapter/sitecustomize.py",
+      "source": "MAGIC-official-main/r2ai_magic/runtime/vllm-qwen35-sft-adapter/sitecustomize.py",
+      "original_sha256": "f4e385d0f7e2c0733c3179f65ab8fd2ff3ad0079ba2f7f29f2518933625009f3",
+      "contribution_sha256": "f4e385d0f7e2c0733c3179f65ab8fd2ff3ad0079ba2f7f29f2518933625009f3",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/prepare_qwen35_text_only_view.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/prepare_qwen35_text_only_view.py",
+      "original_sha256": "6cb396a90aabbcecd4ed120c66f607fd8b1fdedc69b4898973d68e14a13d699f",
+      "contribution_sha256": "6cb396a90aabbcecd4ed120c66f607fd8b1fdedc69b4898973d68e14a13d699f",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/prepare_qwen35_vllm_service_view.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/prepare_qwen35_vllm_service_view.py",
+      "original_sha256": "14810952808a4059a3365fa85244edd24842c25c7524b9829746ef4d9a19acd3",
+      "contribution_sha256": "14810952808a4059a3365fa85244edd24842c25c7524b9829746ef4d9a19acd3",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/prepare_ministral_reasoning_sft.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/prepare_ministral_reasoning_sft.py",
+      "original_sha256": "c1c57d68d9057a5b70aab7b7b68770c1df8d9b1fa45bcda74452277ac9dc6b54",
+      "contribution_sha256": "c1c57d68d9057a5b70aab7b7b68770c1df8d9b1fa45bcda74452277ac9dc6b54",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/validate_sft_data.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/validate_sft_data.py",
+      "original_sha256": "bc0d74fdb5736824e184786eafad41a29504f02223c6135bc6ae1e7cd1d64500",
+      "contribution_sha256": "bc0d74fdb5736824e184786eafad41a29504f02223c6135bc6ae1e7cd1d64500",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/run_qwen36_attacker_sft.sh",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/run_qwen36_attacker_sft.sh",
+      "original_sha256": "a31017fd79985a243f8edc618a9c61d498f058de37497aab28f2d13affa0f09f",
+      "contribution_sha256": "fd10d38b1d4f0929878e07146f3661ed78ee8430dd987b13c7178b3a412ff6e8",
+      "unchanged": false
+    },
+    {
+      "file": "r2ai_magic/scripts/run_ministral_reasoning_sft_4gpu.sh",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/run_ministral_reasoning_sft_4gpu.sh",
+      "original_sha256": "6e9a8b0b754d7ab2f0f3cab3b901b3ebcc43decada47a8c42766cc5095020926",
+      "contribution_sha256": "56951d70f9a9c0617500527193cef4ea096850cdc9e42d865077ba92fd154e15",
+      "unchanged": false
+    },
+    {
+      "file": "r2ai_magic/scripts/run_magic_generic_causal_sft.sh",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/run_magic_generic_causal_sft.sh",
+      "original_sha256": "a446014c0a5981af8dc6208bfdafd846b61bbbd3b08af6a4ddd04f04d17f95fd",
+      "contribution_sha256": "a446014c0a5981af8dc6208bfdafd846b61bbbd3b08af6a4ddd04f04d17f95fd",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/prepare_deepseek_v4_megatron_sft.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/prepare_deepseek_v4_megatron_sft.py",
+      "original_sha256": "ce6f81a3dc39ad99eef223fac0f6bc6638f07127b25a48fcf2b7cf101fc7163e",
+      "contribution_sha256": "ce6f81a3dc39ad99eef223fac0f6bc6638f07127b25a48fcf2b7cf101fc7163e",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/train_deepseek_v4_megatron_sft.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/train_deepseek_v4_megatron_sft.py",
+      "original_sha256": "10f0ea385162c2df380175aaeb2cd7652862393a666efbd191cc25daa00f385a",
+      "contribution_sha256": "10f0ea385162c2df380175aaeb2cd7652862393a666efbd191cc25daa00f385a",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/scripts/audit_deepseek_v4_sft.py",
+      "source": "MAGIC-official-main/r2ai_magic/scripts/audit_deepseek_v4_sft.py",
+      "original_sha256": "c877ad765bede76fb8c2d9d8fe369e987abea3e41437e7e1c38a2e7c2d158244",
+      "contribution_sha256": "c877ad765bede76fb8c2d9d8fe369e987abea3e41437e7e1c38a2e7c2d158244",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/verl010_validation_subset_metrics.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/verl010_validation_subset_metrics.patch",
+      "original_sha256": "8a89cabf01a36db0bfb262012478eb7f2f67c6d63373e030de869a9270fb0131",
+      "contribution_sha256": "8a89cabf01a36db0bfb262012478eb7f2f67c6d63373e030de869a9270fb0131",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/vllm018_pixtral_outer_wrapper.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/vllm018_pixtral_outer_wrapper.patch",
+      "original_sha256": "6e2f84d9151e33714d9ca253668a02b5a9b639cc9d3fc58671071148e3622e47",
+      "contribution_sha256": "6e2f84d9151e33714d9ca253668a02b5a9b639cc9d3fc58671071148e3622e47",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/vllm018_mistral_llama4_rope_parameters.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/vllm018_mistral_llama4_rope_parameters.patch",
+      "original_sha256": "b680e00703be8620448055276c060d08aea1228d4bf566216302cb952fab1ec8",
+      "contribution_sha256": "b680e00703be8620448055276c060d08aea1228d4bf566216302cb952fab1ec8",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/verl010_qwen35_text_renderer.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/verl010_qwen35_text_renderer.patch",
+      "original_sha256": "1c6ef92d1d934e7bbe6a2e75b58c44a80920b222cd0ebfbc10b8db8a81c7000f",
+      "contribution_sha256": "1c6ef92d1d934e7bbe6a2e75b58c44a80920b222cd0ebfbc10b8db8a81c7000f",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/verl010_allow_oversized_singleton_microbatch.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/verl010_allow_oversized_singleton_microbatch.patch",
+      "original_sha256": "7f719fb6516e94b57926328be2a20e73a6a7d9a0add07f9d1d5b93d5065b9659",
+      "contribution_sha256": "7f719fb6516e94b57926328be2a20e73a6a7d9a0add07f9d1d5b93d5065b9659",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/vllm018_yarn_mscale.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/vllm018_yarn_mscale.patch",
+      "original_sha256": "96b1e607f518f08902e0fb0a5bbbbd99c660aec99aea9d7e9fd3d825e459b4af",
+      "contribution_sha256": "96b1e607f518f08902e0fb0a5bbbbd99c660aec99aea9d7e9fd3d825e459b4af",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/verl010_no_rmpad_logprob.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/verl010_no_rmpad_logprob.patch",
+      "original_sha256": "bcb7c8e9141601c5cd2d248587805131a730bb506b1dde3cd509643998fc5fe3",
+      "contribution_sha256": "bcb7c8e9141601c5cd2d248587805131a730bb506b1dde3cd509643998fc5fe3",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/rl/patches/verl010_qwen35_response_logits.patch",
+      "source": "MAGIC-official-main/r2ai_magic/rl/patches/verl010_qwen35_response_logits.patch",
+      "original_sha256": "c9710bdb2d115a00bec12a525f31ba5338be31efae37c5a6ead05e671b705dc1",
+      "contribution_sha256": "c9710bdb2d115a00bec12a525f31ba5338be31efae37c5a6ead05e671b705dc1",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/tests/__init__.py",
+      "source": "MAGIC-official-main/r2ai_magic/tests/__init__.py",
+      "original_sha256": "3b03f3e2d1130dd18ec4a6c86ea40115ff1d625810a9c7254c9146bb3a3c9946",
+      "contribution_sha256": "3b03f3e2d1130dd18ec4a6c86ea40115ff1d625810a9c7254c9146bb3a3c9946",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/tests/test_fsdp_sft.py",
+      "source": "MAGIC-official-main/r2ai_magic/tests/test_fsdp_sft.py",
+      "original_sha256": "01004bbe6069581d7d9229aec76a6e37f9233628c17042fadd2ca0fbc2eca7ca",
+      "contribution_sha256": "01004bbe6069581d7d9229aec76a6e37f9233628c17042fadd2ca0fbc2eca7ca",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/tests/test_prepare_ministral_reasoning_sft.py",
+      "source": "MAGIC-official-main/r2ai_magic/tests/test_prepare_ministral_reasoning_sft.py",
+      "original_sha256": "abdf3fd0192aad6bec817351472bb17c91c965e2a0ac2f021e6aee7cbce3369e",
+      "contribution_sha256": "abdf3fd0192aad6bec817351472bb17c91c965e2a0ac2f021e6aee7cbce3369e",
+      "unchanged": true
+    },
+    {
+      "file": "r2ai_magic/tests/test_magic_rl_contracts.py",
+      "source": "MAGIC-official-main/r2ai_magic/tests/test_magic_rl_contracts.py",
+      "original_sha256": "0fb2d89a2933cf2eaee8365b2115b00c041771f19bb1ed95a9f06490a1251976",
+      "contribution_sha256": "0fb2d89a2933cf2eaee8365b2115b00c041771f19bb1ed95a9f06490a1251976",
+      "unchanged": true
+    },
+    {
+      "file": "runtime/ministral/sitecustomize.py",
+      "source": "MAGIC-official-main/sitecustomize.py",
+      "original_sha256": "9d27fe36a5590cb0aa8b651c9998dc9289bbfedcb480e1cfac46502f8dbd04fc",
+      "contribution_sha256": "9d27fe36a5590cb0aa8b651c9998dc9289bbfedcb480e1cfac46502f8dbd04fc",
+      "unchanged": true
+    },
+    {
+      "file": "deepseek_v4/train_deepseek_v4_magic_lora_sft.py",
+      "source": "MAGIC_deepseek_lora/train_deepseek_v4_magic_lora_sft.py",
+      "original_sha256": "fcddeeffda978e909617f270281fad822a968c08d5e1a44277538e95632d2baf",
+      "contribution_sha256": "fcddeeffda978e909617f270281fad822a968c08d5e1a44277538e95632d2baf",
+      "unchanged": true
+    },
+    {
+      "file": "deepseek_v4/train_deepseek_v4_magic_lora_sft_single8.py",
+      "source": "MAGIC_deepseek_lora/train_deepseek_v4_magic_lora_sft_single8.py",
+      "original_sha256": "8278bcae2006fdb5f0eeecb7f4308ae289543cc4658d793c8390c9b48e570a33",
+      "contribution_sha256": "8278bcae2006fdb5f0eeecb7f4308ae289543cc4658d793c8390c9b48e570a33",
+      "unchanged": true
+    },
+    {
+      "file": "deepseek_v4/magic_grpo_native_entry_v15.py",
+      "source": "MAGIC_deepseek_lora/magic_grpo_native_entry_v15.py",
+      "original_sha256": "57437844266c7a7aacfeb6a0bf0e428a1a9a2e347a0a57cdff9a0b7da07dcf1f",
+      "contribution_sha256": "d9cc9ac3dd8decdbdda1e6d2236d5872150e356ecf051768653ece68fe3692b3",
+      "unchanged": false
+    },
+    {
+      "file": "deepseek_v4/runtime_reference/vllm/model_executor/models/deepseek_v4.py",
+      "source": "2026-09-12 local runtime backup/deepseek_v4_model.py",
+      "original_sha256": "bcb842d4e316e765bf7b15e29dff108e837491ef398bc67935be23684cd00536",
+      "contribution_sha256": "bcb842d4e316e765bf7b15e29dff108e837491ef398bc67935be23684cd00536",
+      "unchanged": true
+    },
+    {
+      "file": "deepseek_v4/runtime_reference/swift/megatron/trainers/rollout_mixin.py",
+      "source": "2026-09-12 local runtime backup/rollout_mixin.py",
+      "original_sha256": "666f130f38d8c30d0b38de87f6512d3cdd8d508c4a7018df80bcb76609e140f5",
+      "contribution_sha256": "666f130f38d8c30d0b38de87f6512d3cdd8d508c4a7018df80bcb76609e140f5",
+      "unchanged": true
+    },
+    {
+      "file": "deepseek_v4/normalize_merged_config.py",
+      "source": "MAGIC_deepseek_lora/r2ai-stable-magic-v1/repair_magic_merge_mlp_config.py",
+      "original_sha256": "6bf6b3a41056a9534c27d8480aae96cedfafbe9c779df1dbc0b28452ee1ccf04",
+      "contribution_sha256": "9a894e2f6f30cc25271f7ba3278ef1669c403b7477ac5a38d43b62f14ac0dcd3",
+      "unchanged": false
+    }
+  ],
+  "packaging_changes": [
+    "Remove the package initializer dependency on unrelated data-generation modules.",
+    "Replace Qwen and Ministral machine-specific checkpoint defaults with required MODEL_PATH inputs.",
+    "Resolve the Ministral contribution root from the launcher location.",
+    "Remove a private experiment-tree attribution from the historical native-rollout module docstring.",
+    "Add dependency, integration-scope, validation and source-attribution documentation.",
+    "Trim two redundant final blank lines; preserve unified-diff context whitespace through scoped .gitattributes.",
+    "Package the original DeepSeek merged-config repair as normalize_merged_config.py with CLI paths, explicit validation, exclusive backup creation and atomic replacement; add four CPU tests."
+  ]
+}

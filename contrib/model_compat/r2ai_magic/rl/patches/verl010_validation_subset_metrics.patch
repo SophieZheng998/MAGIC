@@ -1,0 +1,16 @@
+--- a/trainer/ppo/ray_trainer.py
++++ b/trainer/ppo/ray_trainer.py
+@@ -688,7 +688,12 @@
+             if "__num_turns__" in test_batch.non_tensor_batch:
+                 sample_turns.append(test_batch.non_tensor_batch["__num_turns__"])
+ 
+-            data_source_lst.append(test_batch.non_tensor_batch.get("data_source", ["unknown"] * reward_tensor.shape[0]))
++            eval_subsets = test_batch.non_tensor_batch.get(
++                "subset",
++                test_batch.non_tensor_batch.get("data_source", ["unknown"] * reward_tensor.shape[0]),
++            )
++            reward_extra_infos_dict["subset"].extend(list(eval_subsets))
++            data_source_lst.append(eval_subsets)
+ 
+         self._maybe_log_val_generations(inputs=sample_inputs, outputs=sample_outputs, scores=sample_scores)
+ 

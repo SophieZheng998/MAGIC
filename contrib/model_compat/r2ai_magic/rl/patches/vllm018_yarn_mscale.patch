@@ -1,0 +1,37 @@
+--- __init__.py
++++ __init__.py
+@@ -5,3 +5,4 @@
+ from typing import Any
+ 
++import math
+ import torch
+@@ -300,17 +301,29 @@
+     elif scaling_type == "yarn":
+         scaling_factor = rope_parameters["factor"]
+         original_max_position = rope_parameters["original_max_position_embeddings"]
+         extra_kwargs = {
+             k: v
+             for k, v in rope_parameters.items()
+             if k
+             in (
+                 "extrapolation_factor",
+                 "attn_factor",
+                 "beta_fast",
+                 "beta_slow",
+                 "apply_yarn_scaling",
+                 "truncate",
+             )
+         }
++        # Transformers 5 YaRN configs may express the attention factor as a
++        # ratio of two mscale terms. vLLM 0.18 ignores those keys and otherwise
++        # falls back to get_mscale(factor), changing every rotary embedding.
++        mscale = rope_parameters.get("mscale")
++        mscale_all_dim = rope_parameters.get("mscale_all_dim")
++        if "attn_factor" not in extra_kwargs and mscale and mscale_all_dim:
++            def get_mscale(value: float) -> float:
++                if scaling_factor <= 1:
++                    return 1.0
++                return 0.1 * value * math.log(scaling_factor) + 1.0
++
++            extra_kwargs["attn_factor"] = get_mscale(mscale) / get_mscale(mscale_all_dim)
+         if "mrope_section" in rope_parameters:

@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+r2ai_magic/checkpoints/
+r2ai_magic/data/
+r2ai_magic/runs/

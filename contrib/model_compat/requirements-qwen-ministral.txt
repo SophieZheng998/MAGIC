@@ -1,0 +1,14 @@
+# Recorded Qwen/Ministral runtime inventory; see DEPENDENCIES.md.
+# Not a one-command install: vLLM 0.18 metadata conflicts with Transformers 5.
+torch==2.10.0
+vllm==0.18.0
+transformers==5.5.3
+flash-attn==2.8.3
+ray==2.54.1
+numpy==2.2.6
+Jinja2==3.1.6
+math-verify==0.9.0
+pebble==5.2.1
+jsonlines==4.0.0
+TransferQueue==0.1.8
+# VERL: git revision 5ba5f2f51281522150a6c1c87e3f841d1d220042

@@ -1,0 +1,33 @@
+--- pixtral.py.orig
++++ pixtral.py
+@@ -1000,6 +1000,30 @@
+         def llm_weights_generator():
+             # Single pass over weights
+             for name, w in weights:
++                original_name = name
++                # Transformers' Mistral3ForConditionalGeneration stores the
++                # text model below model.language_model, whereas vLLM's
++                # Pixtral wrapper delegates directly to MistralForCausalLM.
++                # Normalize that outer wrapper before dispatching the key.
++                # This path is required both for initial safetensors loading
++                # and for VERL's live actor-to-rollout weight synchronization.
++                if any(
++                    component
++                    in {
++                        "vision_tower",
++                        "vision_encoder",
++                        "multi_modal_projector",
++                        "vision_language_adapter",
++                        "patch_merger",
++                        "pre_mm_projector_norm",
++                    }
++                    for component in name.split(".")
++                ):
++                    continue
++                if name.startswith("model.language_model."):
++                    name = "model." + name.removeprefix("model.language_model.")
++                if "lm_head" in original_name or "embed_tokens" in original_name:
++                    print(f"MAGIC_PIXTRAL_KEY: {original_name} -> {name}", flush=True)
+                 if is_vision_encoder_weights((name, w)):
+                     if _is_layer_none_or_staged(self.vision_encoder):
+                         continue
